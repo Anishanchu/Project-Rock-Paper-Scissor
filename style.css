@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: antiquewhite;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px ;
+    margin: 10px;
+    
+}
+.playboard {
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite;
+    padding: 2px;
+    margin: 30px;
+    background-color: antiquewhite;
+}
+.player {
+    padding: 50px;
+    font-size: 30px;
+    text-align: center; 
+} 
+.computer {
+    padding: 50px;
+    font-size: 30px;
+    text-align: center; 
+}
+.vs {
+    display: flex;
+    font-size: 100px;
+    align-items: center;
+    color: black;
+    background-color: antiquewhite;
+    padding: 0px;
+    margin: 0px;
+}
+.board {
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    padding: 0px;
+    margin: 0px;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    border: 3px solid #555;
+    border-radius: 5px;
+    transition-duration: .30s;
+}
+.prock{
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    background: url(rock.jpg);
+    background-size: 170px;
+}
+
+.prock:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: scale(.95);
+}
+
+.ppaper{
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    background: url(paper.jpg);
+    background-size: 170px;
+
+}
+
+.ppaper:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: scale(.95);
+}
+
+.pscissors{
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    background: url(scissors.jpg);
+    background-size: 160px;
+}
+
+.pscissors:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: scale(.95);
+}
+.crock{
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    background: url(rock.jpg);
+    background-size: 170px;
+}
+
+.crock:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: scale(.95);
+}
+
+.cpaper{
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    background: url(paper.jpg);
+    background-size: 170px;
+
+}
+
+.cpaper:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: scale(.95);
+}
+
+.cscissors{
+    box-shadow: 0 30px 60px rgba(0,0,0,.5);
+    background: url(scissors.jpg);
+    background-size: 160px;
+}
+
+.cscissors:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+    transform: scale(.95);
+}
