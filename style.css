@@ -53,36 +53,36 @@
     border-radius: 5px;
     transition-duration: .30s;
 }
-.prock{
+.rock{
     box-shadow: 0 30px 60px rgba(0,0,0,.5);
     background: url(rock.jpg);
     background-size: 170px;
 }
 
-.prock:hover{
+.rock:hover{
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
     transform: scale(.95);
 }
 
-.ppaper{
+.paper{
     box-shadow: 0 30px 60px rgba(0,0,0,.5);
     background: url(paper.jpg);
     background-size: 170px;
 
 }
 
-.ppaper:hover{
+.paper:hover{
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
     transform: scale(.95);
 }
 
-.pscissors{
+.scissors{
     box-shadow: 0 30px 60px rgba(0,0,0,.5);
     background: url(scissors.jpg);
     background-size: 160px;
 }
 
-.pscissors:hover{
+.scissors:hover{
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
     transform: scale(.95);
 }
@@ -118,4 +118,17 @@
 .cscissors:hover{
     box-shadow: 0 5px 10px rgba(0,0,0,.5);
     transform: scale(.95);
+}
+#resultText{
+    font-size: 30px;
+    text-align: center;
+}
+#endGame{
+    font-size: 30px;
+    text-align: center;
+}
+.score {
+    display:flex;
+    justify-content: space-around;
+    font-size: 30px;
 }

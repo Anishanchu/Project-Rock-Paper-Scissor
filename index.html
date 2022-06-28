@@ -10,32 +10,28 @@
             <div class="playboard">
                 <div class="player"><h3>Player</h3>
                     <div class="board">
-                        <button class="button prock"></button>
-                        <button class="button ppaper"></button> 
-                        <button class="button pscissors"></button>               
+                        <button class="button rock" id="button">ROCK</button>
+                        <button class="button paper" id="button">PAPER</button>
+                        <button class="button scissors" id="button">SCISSORS</button>               
                     </div>
-                    <output type="score" aria-placeholder="score">Score</output>
+                    <div id="playerText"></div>
                 </div>
         <div class="vs">Vs</div>
                 <div class="computer"><h3>Computer</h3>
                     <div class="board">
                         <button class="button crock"></button>
-                        <button class="button cpaper"></button> 
-                        <button class="button cscissors"></button>
+                        <button class="button cpaper"></button>
+                        <button class="button cscissors"></button> 
                     </div>
-                    <output type="score" aria-placeholder="score">Score</output>
+                    <div id="computerText"></div>
                 </div>
             </div>
-        <div class="result">Result</div>
-       
-
-
-        <script>
-            function computerPlay() {
-                let computer = ['rock', 'paper', 'scissors']
-                return computer[Math.floor(Math.random() * computer.length)] 
-
-            }
-        </script>
+        <div id="resultText">Result: </div>
+        <div id="endGame"></div>
+        <div class="score">
+            <div id="playerScore"></div>
+            <div id="computerScore"></div>
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>

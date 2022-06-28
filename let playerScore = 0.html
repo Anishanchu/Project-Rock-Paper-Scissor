@@ -1,0 +1,68 @@
+let playerScore = 0
+            let computerScore = 0
+            const buttons = document.querySelectorAll('input')
+
+
+            function computerPlay() {
+                let computer = ['rock', 'paper', 'scissors']
+                return computer[Math.floor(Math.random() * computer.length)] 
+
+                console.log(computer);
+            }
+            document.getElementsByI('buttond').addEventListener('click',computerPlay)
+
+            function playRound() {
+                let PlayerSelection = buttons;
+                let computerSelection = computerPlay()
+                let result = " "
+                
+
+                if ((playerSelection == 'rock' && computerSelection == 'scissors') ||
+                    (playerSelection == 'scissors' && computerSelection == 'paper') ||
+                    (playerSelection == 'paper' && computerSelection == 'rock')) {
+
+
+                        playerScore += 1
+                        result = ('You win! ' + playerSelection + ' beats ' + computerSelection
+                        + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+
+                        if (playerScore == 5) {
+                        result += '<br><br>You won the game! Reload the page to play again'
+                    
+                    }
+                }
+                else if (playerSelection == computerSelection) {
+                result = ('It\'s a tie. You both chose ' + playerSelection
+                + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+
+                }
+                else {
+                computerScore += 1
+                result = ('You lose! ' + computerSelection + ' beats ' + playerSelection
+                + "<br><br>Player score: " + playerScore + "<br>Computer score: " + computerScore)
+
+                  if (computerScore == 5) {
+                  result += '<br><br>I won the game! Reload the page to play again'
+            
+            }
+        }
+       document.getElementById('result').innerHTML = result
+       return
+
+
+
+
+
+
+
+       if (playerSelection == computerSelection){
+        return "Draw!";
+        }
+    else if (computerSelection == "ROCK"){
+        return (playerSelection == "PAPER")? "You Win! Paper beats Rock" : "You lose! Paper beats Rock";
+    }
+    else if (computerSelection == "PAPER"){
+        return (playerSelection == "SCISSORS")? "You Win! Scissors beats Paper" : "You lose! Scissors beats Paper";
+    }
+    else if (computerSelection == "SCISSORS"){
+        return (playerSelection == "ROCK")? "You Win! Rock beats Scissors" : "You lose! Rock beats Scissors";
