@@ -1,3 +1,5 @@
+
+//Get the inputs from html
 const playerText = document.querySelector("#playerText");
 const computerText = document.querySelector("#computerText");
 const resultText = document.querySelector("#resultText");
@@ -6,7 +8,7 @@ const computerScore = document.getElementById("computerScore");
 const playerScore = document.getElementById("playerScore");
 const endGame = document.querySelector("#endGame");
 
-
+//Declare the variables 
 let playerSelection;
 let computerSelection;
 let result;
@@ -26,6 +28,7 @@ choiceBtns.forEach(button => button.addEventListener('click',() => {
 
 }));
 
+// Function for computer play
 function computerTurn(){
 
     let randNum = Math.floor(Math.random() * 3) + 1;
@@ -42,6 +45,8 @@ function computerTurn(){
             break;
     }
 }
+
+//Add score and give comments for winner
 function checkWinner(){
     if (playerSelection === computerSelection){
         return('Draw!')
@@ -71,16 +76,17 @@ function checkWinner(){
         return('You Win!,Scissors beats Paper.')
     }
 
+//Verify the winner and refresh the page
 }
  function gameOver(){
 
-    if(pScore >= 6){
+    if(pScore == 6){
         alert('GAME OVER! YOU WON THE MATCH')
         location.reload()
         
         
     }
-    else if( cScore >= 6) {
+    else if( cScore == 6) {
         alert('GAME OVER! YOU LOST THE MATCH')
         location.reload()
     }
